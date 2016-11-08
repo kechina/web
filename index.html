@@ -4,26 +4,300 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+        <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
 
     <title>Kevin</title>
     <style type="text/css">
-        .center
-            {
-             margin:0 auto;text-align:center;
-            }
-        .loginDiv{max-width:300px; margin-left:auto;margin-right:auto; margin-top:20px}
-          h1{font-size:14pt; margin:0; padding:0}
-         html
-            {
-                height:100%;
-            }
-            
+        .zhongjian {
+            position: absolute;
+            height: 66px;
+            width: 100%;
+            margin: 0px auto;
+            left: 0;
+            right: 0;
+            top: 100px;
+            text-align:center;
+        }
+        .center {
+            margin-left:auto; 
+            margin-right:auto;
+            text-align:center;
+        }
         </style>
 </head>
-<body>
-    <a class="btn btn-primary" href="http://edu.51cto.com/lecturer/user_id-80380.html" role="button">全课程列表</a>
+<body style="overflow: hidden;"> 
+   <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                   
+                </button>
+                <a class="navbar-brand" href="/"> </a> <!-- 导航栏标题 -->
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <!-- 模态框的按钮 -->
+                       
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#study">
+                           我想学技术
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#one-help-one">
+                           一对一辅导
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#auto1">
+                          自动化运维工具(Nalo-A)
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#auto2">
+                          自动化运维工具(Nalo-X)
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#Assets">
+                          IT资产管理平台
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#ITSM">
+                          ITSM
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#service1">
+                          IT规划/咨询服务
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#service2">
+                          微软企业级产品或服务
+                        </button>
+                        <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#contact">
+                          联系
+                        </button>
+                        
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+       </div>
+         
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <!-- 模态框开始 -->
+<div class="modal fade" id="study" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H3">QQ 扫一扫</h4>
+      </div>
+      <div class="modal-body">
+          <div align="center">
+              <img src="/Images/QQ/QQ.JPG"  alt="QQ" />
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="one-help-one" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H5">QQ 扫一扫</h4>
+      </div>
+      <div class="modal-body">
+          <div align="center">
+              <img src="/Images/QQ/QQ.JPG"  alt="QQ" />
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="auto1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H6">自动化运维</h4>
+      </div>
+      <div class="modal-body">
+          <div align="center">
+              <img style="width:100%" src="/Images/sales/A.jpg"  alt="" />
+              <p>全自动运维工具，支持开机自动启动，售价10元，联系QQ 491537988</p>
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="auto2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H7">自动化运维</h4>
+      </div>
+      <div class="modal-body">
+          <div align="center" style="background-image:url('/Images/sales/server.jpg'); height:510px">
+              
+          </div>
+      </div>
+      <div class="modal-footer">
+          <a class="btn btn-primary" href="/Images/sales/server.jpg" role="button">查看</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="Assets" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H11">IT资产管理平台</h4>
+      </div>
+      <div class="modal-body">
+          <img style="width:100%" src="/Images/sales/Assets.jpg"  alt="" />
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="ITSM" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H12">ITSM</h4>
+      </div>
+      <div class="modal-body">
+          <img style="width:100%" src="/Images/sales/ITSM.jpg"  alt="" />
+      </div>
+      <div class="modal-footer">
+       
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="service1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H9">企业信息化建设规划/咨询服务</h4>
+      </div>
+      <div class="modal-body">
+          <h5>传统行业如何+互联网？在企业管理信息化、电子商务营销拓展等领域为客户提供IT信息化战略规划咨询服务、OA/ERP/进销存/CRM等系统选型实施咨询服务、电子商务规划与渠道整合营销咨询服务，为商超连锁业、制造业、零售业等提供行业应用软件与整体解决方案...</h5>
+           
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+        <!-- 模态框开始 -->
+<div class="modal fade" id="service2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H10">微软企业级产品或服务</h4>
+      </div>
+      <div class="modal-body">
+          <h5>Microsoft Windows Server、Office 365、SQL Server、Dynamics CRM、Exchange Server、SharePoint Server、Microsoft Azure……产品技术支持(规划/部署/技术服务等)...</h5>
+           
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+    <!-- 模态框开始 -->
+<div class="modal fade" id="contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="H8">联系</h4>
+      </div>
+      <div class="modal-body">
+           <img style="width:100%" src="/Images/business_card/Kevin_card.JPG"  alt="" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- 模态框结束 -->
+     <div style="position:relative;">
+      <div class="zhongjian">
+        
+            <h2 style=color:white>Kevin 企业级IT教育+服务</h2>
+
+          <!-- Main 开始 -->
+            <div class="row" style="text-align:center">
+                <div>
+                     
+                    <h4 style=color:#fff>服务范围：网络基础架构+AD+邮件+Sharepoint+项目管理+CRM+PLM+ERP+灾备+信息化策划</h4>
+                </div>
+            </div>
+          <!-- Main 结束 -->
+
+                 <p>  
+                     <div class="center">
+                     <!-- Split button分裂式 -->
+<div class="btn-group">
+  <button type="button" class="btn btn-danger">培训体系</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="http://edu.51cto.com/course/course_id-6272.html">Active Directory/AD/域/活动目录</a></li>
+    <li><a href="http://edu.51cto.com/course/course_id-6010.html">Exchange/协作</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-6935.html">SQL Server/数据库</a></li>
+    <li><a href="http://edu.51cto.com/course/course_id-6113.html">Sharepoint/门户/内容管理/应用开发/BI</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-6183.html">Project/项目管理/任务管理</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-5944.html">文件服务/企业文件中心</a></li>
+    <li><a href="http://edu.51cto.com/course/course_id-6683.html">Backup/灾备</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-6036.html">IT 设备管理/软件管理/资源管理/资产履历</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-6021.html">IT 事件管理/事件分析/事件分派</a></li>
+      <li><a href="http://edu.51cto.com/course/course_id-5900.html">Dynamics CRM 客户关系管理/销售管理</a></li>
+  </ul>
+</div>
+
+             <a class="btn btn-primary" href="http://edu.51cto.com/lecturer/user_id-80380.html" role="button">全课程列表</a>
+                     </div>
+                 </p>
+
+         </div>
+ 
+    </div>
+
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </body>
 </html>
